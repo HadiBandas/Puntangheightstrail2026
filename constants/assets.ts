@@ -19,11 +19,11 @@ export const ASSETS = {
     meal: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2000&auto=format&fit=crop", // Healthy food bowl
   },
   gallery: [
-    { src: "https://images.unsplash.com/photo-1544966577-99f899db5346?q=80&w=1000&auto=format&fit=crop", span: "col-span-2 row-span-2", altKey: "gallery.alt1" }, // Trail runner
-    { src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt2" }, // Scenery
-    { src: "https://images.unsplash.com/photo-1552674605-469455302243?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt3" }, // Group
-    { src: "https://images.unsplash.com/photo-1452626038306-9aaff5e0ac69?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt4" }, // Detail
-    { src: "https://images.unsplash.com/photo-1533561052669-d61518fc98a8?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt5" }, // Drone
+    { src: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Siliwangi_Waterfall.jpg", span: "col-span-2 row-span-2", altKey: "gallery.alt1" }, // Trail runner
+    { src: "https://upload.wikimedia.org/wikipedia/commons/2/26/COLLECTIE_TROPENMUSEUM_Malabar_Radiostation_op_de_Malabarberg_TMnr_10006813.jpg", span: "col-span-1 row-span-1", altKey: "gallery.alt2" }, // Scenery
+    { src: "https://asset-2.tribunnews.com/jabar/foto/bank/originals/sungai_20170211_113726.jpg", span: "col-span-1 row-span-1", altKey: "gallery.alt3" }, // Group
+    { src: "https://jimzzz.wordpress.com/wp-content/uploads/2015/08/img_5416.jpg", span: "col-span-1 row-span-1", altKey: "gallery.alt4" }, // Detail
+    { src: "https://assets.pikiran-rakyat.com/crop/0x344:1440x1585/720x0/webp/photo/2023/11/26/1680076551.jpg", span: "col-span-1 row-span-1", altKey: "gallery.alt5" }, // Drone
   ],
   organizerLogo: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/TWB1.png", 
   sponsors: [
