@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
@@ -54,12 +53,12 @@ const TERRAIN_CONFIG: Record<TerrainType, { color: string; label: string }> = {
 // Landmark Images
 const LANDMARK_IMAGES = {
     start: "https://images.unsplash.com/photo-1533561052669-d61518fc98a8?q=80&w=800&auto=format&fit=crop",
-    ruins: "https://images.unsplash.com/photo-1599940824399-b87987ce0799?q=80&w=800&auto=format&fit=crop", 
+    ruins: "https://upload.wikimedia.org/wikipedia/commons/2/26/COLLECTIE_TROPENMUSEUM_Malabar_Radiostation_op_de_Malabarberg_TMnr_10006813.jpg", 
     finish: "https://images.unsplash.com/photo-1452626038306-9aaff5e0ac69?q=80&w=800&auto=format&fit=crop",
     pine: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
-    river: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop",
-    peak: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
-    waterfall: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?q=80&w=800&auto=format&fit=crop"
+    river: "https://asset-2.tribunnews.com/jabar/foto/bank/originals/sungai_20170211_113726.jpg",
+    peak: "https://jimzzz.wordpress.com/wp-content/uploads/2015/08/img_5416.jpg",
+    waterfall: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Siliwangi_Waterfall.jpg"
 };
 
 // Mock Elevation Data
