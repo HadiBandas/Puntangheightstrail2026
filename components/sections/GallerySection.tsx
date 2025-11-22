@@ -74,6 +74,9 @@ const GallerySection: React.FC = () => {
                 src={image.src} 
                 alt={t(image.altKey)} 
                 loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
