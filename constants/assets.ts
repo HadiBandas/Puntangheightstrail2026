@@ -15,7 +15,7 @@ export const ASSETS = {
     medal: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/Medal.jpg", // Gold medal
     prizes: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop", // Luxury prizes/gifts
     duffel: "https://raw.githubusercontent.com/HadiBandas/Puntangheighttrail/main/Image/Duffel.webp", // Duffel bag
-    bib: "https://raw.githubusercontent.com/HadiBandas/Puntangheighttrail/main/Image/BIB.jpg", // Runner Bib closeup
+    bib: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/BIB.jpg", // Runner Bib closeup
     meal: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2000&auto=format&fit=crop", // Healthy food bowl
   },
   gallery: [
