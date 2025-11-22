@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { LogoIcon, MapPin, Phone, Mail, Twitter, Instagram, Facebook, Loader } from '../../constants/icons';
 import { useTranslation } from '../../hooks/useTranslation';
 import { useToast } from '../../contexts/ToastContext';
+import { ASSETS } from '../../constants/assets';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -31,7 +32,11 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div>
             <a href="#" className="flex items-center gap-3 mb-4" aria-label="Back to top">
-              <LogoIcon className="w-16 h-16 -ml-2" aria-hidden="true" />
+              {ASSETS.logo ? (
+                 <img src={ASSETS.logo} alt="Puntang Heights Trail" className="w-16 h-16 -ml-2 object-contain" />
+              ) : (
+                 <LogoIcon className="w-16 h-16 -ml-2" aria-hidden="true" />
+              )}
               <div className="flex flex-col -space-y-1">
                   <span className="font-bebas text-3xl text-white tracking-wider">PUNTANG</span>
                   <span className="font-montserrat text-[9px] font-bold text-white tracking-widest">HEIGHTS TRAIL</span>
