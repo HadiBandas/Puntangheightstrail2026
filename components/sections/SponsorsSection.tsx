@@ -38,6 +38,8 @@ const SponsorsSection: React.FC = () => {
                 <img 
                     src={ASSETS.organizerLogo} 
                     alt="Taman Wisata Bougenville" 
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain" 
                 />
             </div>
@@ -64,7 +66,11 @@ const SponsorsSection: React.FC = () => {
                 <img 
                     src={logo} 
                     alt={`Sponsor ${index + 1}`} 
-                    className="max-w-full max-h-12 opacity-60 hover:opacity-100 transition-all duration-300" 
+                    loading="lazy"
+                    decoding="async"
+                    width="150"
+                    height="60"
+                    className="max-w-full max-h-12 opacity-60 hover:opacity-100 transition-all duration-300 w-auto h-auto" 
                 />
                 </motion.div>
             ))}
