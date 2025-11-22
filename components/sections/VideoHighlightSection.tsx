@@ -60,7 +60,7 @@ const VideoHighlightSection: React.FC = () => {
                 loop
                 onClick={togglePlay}
             >
-                <source src={ASSETS.hero.video} type="video/mp4" />
+                <source src={ASSETS.highlightVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             
