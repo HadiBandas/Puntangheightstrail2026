@@ -8,7 +8,8 @@ export const ASSETS = {
   favicon: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/LogoPHT.png",
 
   hero: {
-    video: "https://videos.pexels.com/video-files/2874876/2874876-uhd_2560_1440_24fps.mp4", // Mountain drone shot
+    // Optimized to 1080p for better load performance (Original was 2.5K)
+    video: "https://videos.pexels.com/video-files/2874876/2874876-hd_1920_1080_24fps.mp4", 
     poster: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/View.webp"
   },
   // New Highlight Video
