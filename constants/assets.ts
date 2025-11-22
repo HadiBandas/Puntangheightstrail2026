@@ -11,6 +11,9 @@ export const ASSETS = {
     video: "https://videos.pexels.com/video-files/2874876/2874876-uhd_2560_1440_24fps.mp4", // Mountain drone shot
     poster: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/View.webp"
   },
+  // New Highlight Video
+  highlightVideo: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/Trailvid.mp4",
+  
   raceKit: {
     jersey: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/tshirt1.jpg", // Trail running jersey mockup
     medal: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/Medal.jpg", // Gold medal
