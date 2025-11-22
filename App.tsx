@@ -1,29 +1,31 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/sections/Header';
 import HeroSection from './components/sections/HeroSection';
 import TrustBar from './components/sections/TrustBar';
-import ValuePropositionSection from './components/sections/ValuePropositionSection';
-import CourseSection from './components/sections/CourseSection';
-import CategoriesSection from './components/sections/CategoriesSection';
-import RaceKitSection from './components/sections/RaceKitSection';
-import TimelineSection from './components/sections/TimelineSection';
-import WhyPuntangSection from './components/sections/WhyPuntangSection';
-import GallerySection from './components/sections/GallerySection';
-import FAQSection from './components/sections/FAQSection';
-import SponsorsSection from './components/sections/SponsorsSection';
-import FinalCTASection from './components/sections/FinalCTASection';
-import VideoHighlightSection from './components/sections/VideoHighlightSection';
-import Footer from './components/sections/Footer';
 import useScrollProgress from './hooks/useScrollProgress';
-import { ArrowRight } from './constants/icons';
+import { ArrowRight, Loader } from './constants/icons';
 import { useTranslation } from './hooks/useTranslation';
 import RegistrationModal from './components/ui/RegistrationModal';
 import BackToTop from './components/ui/BackToTop';
 import ToastContainer from './components/ui/Toast';
 import { useUI } from './contexts/UIContext';
 import { ASSETS } from './constants/assets';
+
+// Lazy Load Heavy Sections
+const ValuePropositionSection = React.lazy(() => import('./components/sections/ValuePropositionSection'));
+const CourseSection = React.lazy(() => import('./components/sections/CourseSection'));
+const CategoriesSection = React.lazy(() => import('./components/sections/CategoriesSection'));
+const RaceKitSection = React.lazy(() => import('./components/sections/RaceKitSection'));
+const TimelineSection = React.lazy(() => import('./components/sections/TimelineSection'));
+const WhyPuntangSection = React.lazy(() => import('./components/sections/WhyPuntangSection'));
+const GallerySection = React.lazy(() => import('./components/sections/GallerySection'));
+const FAQSection = React.lazy(() => import('./components/sections/FAQSection'));
+const SponsorsSection = React.lazy(() => import('./components/sections/SponsorsSection'));
+const FinalCTASection = React.lazy(() => import('./components/sections/FinalCTASection'));
+const VideoHighlightSection = React.lazy(() => import('./components/sections/VideoHighlightSection'));
+const Footer = React.lazy(() => import('./components/sections/Footer'));
 
 const App: React.FC = () => {
   const scrollProgress = useScrollProgress();
@@ -77,47 +79,52 @@ const App: React.FC = () => {
       <Header />
       
       <main>
-        {/* 1. HERO: The Hook */}
+        {/* 1. HERO: The Hook (Eager Loaded) */}
         <HeroSection />
         
-        {/* 2. TRUST: Credibility */}
+        {/* 2. TRUST: Credibility (Eager Loaded) */}
         <TrustBar />
 
-        {/* 3. DESTINATION: Why Here? (Emotional Hook) */}
-        <WhyPuntangSection />
+        {/* Lazy Load Remaining Sections */}
+        <Suspense fallback={<div className="py-20 flex justify-center items-center"><Loader className="w-8 h-8 text-trail-orange animate-spin" /></div>}>
+            {/* 3. DESTINATION: Why Here? (Emotional Hook) */}
+            <WhyPuntangSection />
 
-        {/* 4. VISUAL: Experience (Engagement Booster) */}
-        <VideoHighlightSection />
+            {/* 4. VISUAL: Experience (Engagement Booster) */}
+            <VideoHighlightSection />
 
-        {/* 5. VALUE: Concept & Experience */}
-        <ValuePropositionSection />
+            {/* 5. VALUE: Concept & Experience */}
+            <ValuePropositionSection />
 
-        {/* 6. CHALLENGE: The Course (Technical) */}
-        <CourseSection />
+            {/* 6. CHALLENGE: The Course (Technical) */}
+            <CourseSection />
 
-        {/* 7. BENEFIT: What do I get? (Race Kit) - BEFORE Price */}
-        <RaceKitSection />
+            {/* 7. BENEFIT: What do I get? (Race Kit) - BEFORE Price */}
+            <RaceKitSection />
 
-        {/* 8. ACTION: Categories & Price (The Ask) */}
-        <CategoriesSection />
+            {/* 8. ACTION: Categories & Price (The Ask) */}
+            <CategoriesSection />
 
-        {/* 9. PROOF: Gallery (FOMO) */}
-        <GallerySection />
+            {/* 9. PROOF: Gallery (FOMO) */}
+            <GallerySection />
 
-        {/* 10. LOGISTICS: Timeline (Secondary Info) */}
-        <TimelineSection />
+            {/* 10. LOGISTICS: Timeline (Secondary Info) */}
+            <TimelineSection />
 
-        {/* 11. OBJECTIONS: FAQ */}
-        <FAQSection />
+            {/* 11. OBJECTIONS: FAQ */}
+            <FAQSection />
 
-        {/* 12. TRUST: Sponsors */}
-        <SponsorsSection />
+            {/* 12. TRUST: Sponsors */}
+            <SponsorsSection />
 
-        {/* 13. FINAL PUSH */}
-        <FinalCTASection />
+            {/* 13. FINAL PUSH */}
+            <FinalCTASection />
+        </Suspense>
       </main>
       
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
       
       {/* Global UI Elements */}
       <RegistrationModal />
