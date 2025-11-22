@@ -53,7 +53,7 @@ const GallerySection: React.FC = () => {
         </motion.div>
         
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 grid-rows-2"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[150px] md:auto-rows-[250px]"
           variants={containerVariants}
           initial="hidden"
           animate={isVisible ? 'visible' : 'hidden'}
