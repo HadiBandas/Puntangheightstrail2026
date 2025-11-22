@@ -2,7 +2,7 @@
 
 Official landing page for **Puntang Height Trail 2026**, an exclusive 200-slot trail running event located at Mount Puntang, Bandung. This application is built to showcase the event details, course profiles, and facilitate registration via WhatsApp integration.
 
-![Project Banner](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop)
+![Project Banner](![Banner](https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/View.webp)
 
 ## 🌟 Features
 
