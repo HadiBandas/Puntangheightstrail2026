@@ -1,0 +1,35 @@
+
+export const ASSETS = {
+  hero: {
+    video: "https://videos.pexels.com/video-files/2874876/2874876-uhd_2560_1440_24fps.mp4", // Mountain drone shot
+    poster: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+  },
+  raceKit: {
+    jersey: "https://images.unsplash.com/photo-1562183241-b937e95585b6?q=80&w=1000&auto=format&fit=crop", // Trail running jersey mockup
+    medal: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop", // Gold medal
+    prizes: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop", // Luxury prizes/gifts
+    duffel: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1000&auto=format&fit=crop", // Duffel bag
+    bib: "https://plus.unsplash.com/premium_photo-1664302152994-73124bba3958?q=80&w=2070&auto=format&fit=crop", // Runner Bib closeup
+    meal: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2000&auto=format&fit=crop", // Healthy food bowl
+  },
+  gallery: [
+    { src: "https://images.unsplash.com/photo-1544966577-99f899db5346?q=80&w=1000&auto=format&fit=crop", span: "col-span-2 row-span-2", altKey: "gallery.alt1" }, // Trail runner
+    { src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt2" }, // Scenery
+    { src: "https://images.unsplash.com/photo-1552674605-469455302243?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt3" }, // Group
+    { src: "https://images.unsplash.com/photo-1452626038306-9aaff5e0ac69?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt4" }, // Detail
+    { src: "https://images.unsplash.com/photo-1533561052669-d61518fc98a8?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt5" }, // Drone
+  ],
+  organizerLogo: "https://placehold.co/600x200/ffffff/022c22/png?text=Taman+Wisata%5CnBougenville&font=playfair-display", 
+  sponsors: [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adidas_logo.png/1200px-Adidas_logo.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/New_Balance_logo.svg/1200px-New_Balance_logo.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Asics_Logo.svg/2560px-Asics_Logo.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/7/7b/Salomon_logo.svg",
+  ],
+  courses: {
+    '5K': "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop", // Forest path
+    '10K': "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=2560&auto=format&fit=crop", // Nature/River
+    '21K': "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2560&auto=format&fit=crop", // High Mountain Peak
+  }
+};
