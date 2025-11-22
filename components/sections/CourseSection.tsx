@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
@@ -291,7 +292,7 @@ const InteractiveElevationChart: React.FC<{
                     </g>
                 )}
             </svg>
-
+            
             {/* Terrain Legend - Integrated into Top Right (Desktop) / Bottom Center (Mobile) */}
             <div className="
                 absolute z-20 bg-white/90 backdrop-blur-md border border-gray-100 shadow-sm pointer-events-none
@@ -328,17 +329,27 @@ const InteractiveElevationChart: React.FC<{
                         aria-expanded={hoveredLandmark === lm}
                         aria-controls={hoveredLandmark === lm ? "landmark-tooltip" : undefined}
                     >
+                        {/* Floating Camera Icon */}
+                        <div className={`mb-1 transition-all duration-500 ${hoveredLandmark === lm ? 'opacity-0 -translate-y-4' : 'opacity-100 animate-float'}`}>
+                             <div className="bg-white p-1.5 rounded-full shadow-md border border-gray-100">
+                                  <Camera className="w-3 h-3 text-trail-orange" />
+                             </div>
+                         </div>
+
                         {/* Vertical Dashed Line */}
                         <div 
-                            className={`w-px border-l border-dashed h-16 md:h-32 mb-2 transition-opacity duration-300 ${hoveredLandmark === lm ? 'opacity-60' : 'opacity-0'}`}
+                            className={`w-px border-l border-dashed h-12 md:h-24 mb-1 transition-opacity duration-300 ${hoveredLandmark === lm ? 'opacity-60' : 'opacity-40'}`}
                             style={{ borderColor: color }}
                         ></div>
 
-                        {/* Dot */}
-                        <div 
-                            className={`w-3 h-3 md:w-4 md:h-4 bg-white rounded-full border-2 transition-all duration-300 shadow-sm ${hoveredLandmark === lm ? 'scale-125 border-4' : 'scale-100'}`}
-                            style={{ borderColor: color }}
-                        ></div>
+                        {/* Dot with Ping */}
+                        <div className="relative flex items-center justify-center">
+                            <span className={`absolute inline-flex h-full w-full rounded-full opacity-40 animate-ping ${hoveredLandmark === lm ? 'hidden' : 'block'}`} style={{ backgroundColor: color }}></span>
+                            <div 
+                                className={`relative z-10 w-3 h-3 md:w-4 md:h-4 bg-white rounded-full border-2 transition-all duration-300 shadow-sm ${hoveredLandmark === lm ? 'scale-125 border-4' : 'scale-100'}`}
+                                style={{ borderColor: color }}
+                            ></div>
+                        </div>
 
                         {/* Label */}
                         <div className={`mt-2 text-[10px] md:text-xs font-bebas tracking-wide text-mountain-slate transition-all duration-300 whitespace-nowrap ${hoveredLandmark === lm ? 'opacity-100 scale-110 font-bold' : 'opacity-60 hidden md:block'}`}>
@@ -346,7 +357,7 @@ const InteractiveElevationChart: React.FC<{
                         </div>
 
                         {/* Invisible Hit Area */}
-                        <div className="absolute bottom-0 w-8 h-32 md:h-48 bg-transparent"></div>
+                        <div className="absolute bottom-0 w-10 h-32 md:h-48 bg-transparent"></div>
                     </button>
                  ))}
             </div>
