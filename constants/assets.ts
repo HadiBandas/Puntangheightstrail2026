@@ -2,7 +2,7 @@
 export const ASSETS = {
   hero: {
     video: "https://videos.pexels.com/video-files/2874876/2874876-uhd_2560_1440_24fps.mp4", // Mountain drone shot
-    poster: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+    poster: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/View.webp"
   },
   raceKit: {
     jersey: "https://images.unsplash.com/photo-1562183241-b937e95585b6?q=80&w=1000&auto=format&fit=crop", // Trail running jersey mockup
