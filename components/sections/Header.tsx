@@ -5,6 +5,7 @@ import { LogoIcon, Menu, X } from '../../constants/icons';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useTranslation } from '../../hooks/useTranslation';
 import { useUI } from '../../contexts/UIContext';
+import { ASSETS } from '../../constants/assets';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -116,7 +117,12 @@ const Header: React.FC = () => {
           className="flex items-center gap-1" 
           aria-label="Puntang Heights Trail Home"
         >
-          <LogoIcon className="w-12 h-12" aria-hidden="true" />
+          {ASSETS.logo ? (
+             <img src={ASSETS.logo} alt="Puntang Heights Trail" className="w-12 h-12 object-contain" />
+          ) : (
+             <LogoIcon className="w-12 h-12" aria-hidden="true" />
+          )}
+          
           <div className="flex flex-col -space-y-1">
             <span className="font-bebas text-2xl text-white tracking-wider">PUNTANG</span>
             <span className="font-montserrat text-[7px] font-bold text-white tracking-widest">HEIGHTS TRAIL</span>
