@@ -88,6 +88,8 @@ const RaceKitSection: React.FC = () => {
                <img 
                   src={ASSETS.raceKit.jersey} 
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
@@ -121,6 +123,8 @@ const RaceKitSection: React.FC = () => {
                 <img 
                   src={ASSETS.raceKit.medal} 
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -154,6 +158,8 @@ const RaceKitSection: React.FC = () => {
                 <img 
                   src={ASSETS.raceKit.duffel} 
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" 
                 />
                 <ExpandOverlay />
@@ -179,6 +185,8 @@ const RaceKitSection: React.FC = () => {
                 <img 
                    src={ASSETS.raceKit.bib} 
                    alt="" 
+                   loading="lazy"
+                   decoding="async"
                    className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" 
                 />
                 <ExpandOverlay />
@@ -205,6 +213,8 @@ const RaceKitSection: React.FC = () => {
                 <img 
                    src={ASSETS.raceKit.meal} 
                    alt=""
+                   loading="lazy"
+                   decoding="async"
                    className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" 
                 />
                 <ExpandOverlay />
@@ -236,6 +246,8 @@ const RaceKitSection: React.FC = () => {
                 <img 
                   src={ASSETS.raceKit.prizes} 
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700 mix-blend-overlay"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-trail-orange/90 to-summit-gold/80 mix-blend-multiply"></div>
