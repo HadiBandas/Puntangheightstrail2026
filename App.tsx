@@ -14,6 +14,7 @@ import GallerySection from './components/sections/GallerySection';
 import FAQSection from './components/sections/FAQSection';
 import SponsorsSection from './components/sections/SponsorsSection';
 import FinalCTASection from './components/sections/FinalCTASection';
+import VideoHighlightSection from './components/sections/VideoHighlightSection';
 import Footer from './components/sections/Footer';
 import useScrollProgress from './hooks/useScrollProgress';
 import { ArrowRight } from './constants/icons';
@@ -22,6 +23,7 @@ import RegistrationModal from './components/ui/RegistrationModal';
 import BackToTop from './components/ui/BackToTop';
 import ToastContainer from './components/ui/Toast';
 import { useUI } from './contexts/UIContext';
+import { ASSETS } from './constants/assets';
 
 const App: React.FC = () => {
   const scrollProgress = useScrollProgress();
@@ -36,6 +38,19 @@ const App: React.FC = () => {
           "font-size: 24px; font-weight: bold; color: #f97316; font-family: 'Bebas Neue', sans-serif;", 
           "font-size: 14px; color: #888; font-family: 'Montserrat', sans-serif; margin-top: 5px;"
       );
+  }, []);
+
+  // Dynamic Favicon Updater
+  useEffect(() => {
+    if (ASSETS.favicon) {
+      let link: HTMLLinkElement | null = document.querySelector("link[rel~='icon']");
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'icon';
+        document.getElementsByTagName('head')[0].appendChild(link);
+      }
+      link.href = ASSETS.favicon;
+    }
   }, []);
 
   useEffect(() => {
@@ -71,31 +86,34 @@ const App: React.FC = () => {
         {/* 3. DESTINATION: Why Here? (Emotional Hook) */}
         <WhyPuntangSection />
 
-        {/* 4. VALUE: Concept & Experience */}
+        {/* 4. VISUAL: Experience (Engagement Booster) */}
+        <VideoHighlightSection />
+
+        {/* 5. VALUE: Concept & Experience */}
         <ValuePropositionSection />
 
-        {/* 5. CHALLENGE: The Course (Technical) */}
+        {/* 6. CHALLENGE: The Course (Technical) */}
         <CourseSection />
 
-        {/* 6. BENEFIT: What do I get? (Race Kit) - BEFORE Price */}
+        {/* 7. BENEFIT: What do I get? (Race Kit) - BEFORE Price */}
         <RaceKitSection />
 
-        {/* 7. ACTION: Categories & Price (The Ask) */}
+        {/* 8. ACTION: Categories & Price (The Ask) */}
         <CategoriesSection />
 
-        {/* 8. PROOF: Gallery (FOMO) */}
+        {/* 9. PROOF: Gallery (FOMO) */}
         <GallerySection />
 
-        {/* 9. LOGISTICS: Timeline (Secondary Info) */}
+        {/* 10. LOGISTICS: Timeline (Secondary Info) */}
         <TimelineSection />
 
-        {/* 10. OBJECTIONS: FAQ */}
+        {/* 11. OBJECTIONS: FAQ */}
         <FAQSection />
 
-        {/* 11. TRUST: Sponsors */}
+        {/* 12. TRUST: Sponsors */}
         <SponsorsSection />
 
-        {/* 12. FINAL PUSH */}
+        {/* 13. FINAL PUSH */}
         <FinalCTASection />
       </main>
       
