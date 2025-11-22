@@ -25,7 +25,7 @@ export const ASSETS = {
     { src: "https://images.unsplash.com/photo-1452626038306-9aaff5e0ac69?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt4" }, // Detail
     { src: "https://images.unsplash.com/photo-1533561052669-d61518fc98a8?q=80&w=1000&auto=format&fit=crop", span: "col-span-1 row-span-1", altKey: "gallery.alt5" }, // Drone
   ],
-  organizerLogo: "https://placehold.co/600x200/ffffff/022c22/png?text=Taman+Wisata%5CnBougenville&font=playfair-display", 
+  organizerLogo: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/TWB1.png", 
   sponsors: [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adidas_logo.png/1200px-Adidas_logo.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png",
