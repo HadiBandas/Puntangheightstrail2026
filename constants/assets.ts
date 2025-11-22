@@ -4,7 +4,7 @@ export const ASSETS = {
   // Put your logo URL here to replace the default SVG.
   // Example: "/logo.png" or "https://example.com/logo.png"
   // Leave empty "" to use the default SVG icon.
-  logo: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/PHT%20512%20-%20512.png", 
+  logo: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/LogoPHT.png", 
 
   hero: {
     video: "https://videos.pexels.com/video-files/2874876/2874876-uhd_2560_1440_24fps.mp4", // Mountain drone shot
