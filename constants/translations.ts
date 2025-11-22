@@ -133,6 +133,10 @@ export const translations: Translations = {
         alt4: { en: "Premium Finisher Medal", id: "Medali Finisher Premium" },
         alt5: { en: "Aerial view of the course", id: "Pemandangan udara rute" },
     },
+    videoHighlight: {
+        title: { en: "Relive The Trail", id: "Saksikan Jejak Langkah" },
+        subtitle: { en: "Immerse yourself in the breathtaking landscapes and raw emotion of the Puntang Height Trail experience.", id: "Hanyutkan diri Anda dalam pemandangan menakjubkan dan emosi murni dari pengalaman Puntang Height Trail." },
+    },
     faq: {
         title: { en: "Runner FAQ", id: "FAQ Pelari" },
         subtitle: { en: "Everything you need to know before the starting gun.", id: "Segala hal yang perlu Anda ketahui sebelum pistol start berbunyi." },
