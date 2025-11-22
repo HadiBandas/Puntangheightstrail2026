@@ -11,11 +11,11 @@ export const ASSETS = {
     poster: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/View.webp"
   },
   raceKit: {
-    jersey: "https://images.unsplash.com/photo-1562183241-b937e95585b6?q=80&w=1000&auto=format&fit=crop", // Trail running jersey mockup
-    medal: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop", // Gold medal
+    jersey: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/tshirt1.jpg", // Trail running jersey mockup
+    medal: "https://raw.githubusercontent.com/HadiBandas/Puntangheightstrail2026/main/Medal.jpg", // Gold medal
     prizes: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop", // Luxury prizes/gifts
-    duffel: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1000&auto=format&fit=crop", // Duffel bag
-    bib: "https://plus.unsplash.com/premium_photo-1664302152994-73124bba3958?q=80&w=2070&auto=format&fit=crop", // Runner Bib closeup
+    duffel: "https://raw.githubusercontent.com/HadiBandas/Puntangheighttrail/main/Image/Duffel.webp", // Duffel bag
+    bib: "https://raw.githubusercontent.com/HadiBandas/Puntangheighttrail/main/Image/BIB.jpg", // Runner Bib closeup
     meal: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2000&auto=format&fit=crop", // Healthy food bowl
   },
   gallery: [
